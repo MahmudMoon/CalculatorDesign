@@ -14,11 +14,46 @@
        >
 
         <TextView
-            android:id="@+id/monitor"
-            android:layout_width="match_parent"
+            android:id="@+id/operators"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:textSize="25dp"
-           />
+            android:textSize="50dp"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/previous_result"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:gravity="center_vertical"
+                android:hint="Previous res : "
+
+                />
+
+            <TextView
+                android:id="@+id/monitor"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7"
+                android:textSize="40dp"
+
+                android:gravity="center_vertical"
+                android:hint="0"
+
+                />
+
+        </LinearLayout>
+
+
 
 
 
@@ -162,6 +197,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="0.25"
                 android:text="."
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:gravity="center"
                 android:textAppearance="?android:textAppearanceLarge"/>
 
             <Button
@@ -196,13 +234,16 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="0.2">
+
             <Button
-                android:id="@+id/btn_percentage"
+                android:id="@+id/btn_X"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:textColor="#cb0202"
                 android:layout_weight="0.25"
-                android:text="%"
+                android:text="X"
                 android:textAppearance="?android:textAppearanceLarge"/>
+
 
             <Button
                 android:id="@+id/btn_Clear"
@@ -215,16 +256,16 @@
 
 
 
+
+
+
             <Button
-                android:id="@+id/btn_X"
+                android:id="@+id/btn_percentage"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:textColor="#cb0202"
                 android:layout_weight="0.25"
-                android:text="X"
+                android:text="%"
                 android:textAppearance="?android:textAppearanceLarge"/>
-
-
 
         </LinearLayout>
 
